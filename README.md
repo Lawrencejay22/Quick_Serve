@@ -1,14 +1,14 @@
 # Welcome to our Project name Quick serve
 
 
-## the Techstack that we using is the MERN
+## The Techstack we are using is the MERN
 
-### for front that we use:
+### for the front-end that we use:
 ```
 React/Vite
 Css
 ```
-### for the backend that we use:
+### for the back-end that we use:
 ```
 node
 express
