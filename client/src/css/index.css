@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,14..32,100..1000;1,14..32,100..1000&family=Syne:wght@400..800&display=swap');
+
+:root {
+  /* Design Tokens */
+  --bg-pure: #000000;
+  --bg-deep: #080808;
+  --bg-soft: #121212;
+  --card-bg: #1a1a1a;
+  --border: rgba(255, 255, 255, 0.1);
+  --border-active: rgba(255, 255, 255, 0.2);
+  
+  --accent: #e63946;
+  --accent-glow: rgba(230, 57, 70, 0.4);
+  --accent-soft: #ff6b6b;
+  
+  --text-main: #f0ece4;
+  --text-muted: #888888;
+  --text-dim: #666666;
+  
+  --shadow-lg: 0 20px 48px rgba(0, 0, 0, 0.6);
+  --radius-md: 12px;
+  --radius-lg: 20px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background: var(--bg-pure);
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, .brand-font {
+  font-family: "Syne", sans-serif;
+  font-weight: 800;
+}
+
+/* Global Page Structure */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+.page {
+  padding-top: 64px; /* Matches Nav height */
+  min-height: 100vh;
+}
+
+/* Base Nav (to be overridden by Nav.css but safe defaults) */
+nav {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  background: rgba(13, 13, 13, 0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+
+/* Standardized Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-family: inherit;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: white;
+  box-shadow: 0 4px 15px var(--accent-glow);
+}
+
+.btn-primary:hover {
+  background: var(--accent-soft);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px var(--accent-glow);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--text-main);
+  border: 1px solid var(--border-active);
+}
+
+.btn-outline:hover {
+  border-color: var(--text-main);
+  background: var(--border);
+}
+
+.highlight {
+  color: var(--accent);
+}
+
+/* Glassmorphism Classes */
+.glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--border);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 24px;
+  }
+}
