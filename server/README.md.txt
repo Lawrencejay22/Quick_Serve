@@ -1,7 +1,7 @@
-#Welcome to our Project name Quick serve
+# Welcome to our Project name Quick serve
 
 
-##the Techstack that we using is the MERN
+## the Techstack that we using is the MERN
 
 ### for front that we use:
 ```
