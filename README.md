@@ -5,6 +5,7 @@
 
 ### for the front-end that we use:
 ```
+Html
 React/Vite
 Css
 ```
